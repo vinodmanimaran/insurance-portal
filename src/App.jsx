@@ -17,15 +17,13 @@ const App = () => {
   };
 
   React.useEffect(() => {
-    // Listen for unhandled errors and set the error state accordingly
     window.addEventListener('error', handleError);
     return () => {
-      // Cleanup the event listener
       window.removeEventListener('error', handleError);
     };
   }, []);
 
-  // If there's an error, redirect to a fallback route
+
   if (error) {
     return <Navigate to="/error" />;
   }
