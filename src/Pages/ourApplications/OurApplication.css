@@ -1,0 +1,69 @@
+.content_application_banner h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #ff4e50, #ff9f5f, #ffbf36, #fff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+
+.application_page{
+    overflow: hidden;
+}
+
+
+.banner_application{
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Animation for the gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.main-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; 
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media(max-width:576px){
+    .banner_application h1{
+        font-size: 30px;
+    }
+
+  
+}
+

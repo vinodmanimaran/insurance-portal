@@ -1,0 +1,42 @@
+.insurance_form select {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    width: 100%; 
+    box-sizing: border-box;
+    outline: none; 
+}
+
+
+
+.insurance_form select:focus {
+    border-color: #66CDAA; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+
+
+.insurance_form input[type="text"],
+.insurance_form input[type="tel"],
+.insurance_form input[type="file"]  {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+    outline: none;
+}
+
+.insurance_form input[type="text"]:focus,
+.insurance_form input[type="tel"]:focus,
+.insurance_form input[type="file"]:focus  {
+    border-color:#66CDAA;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}

@@ -1,0 +1,226 @@
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .premium-content {
+    margin-bottom: 50px;
+   text-align: center;
+  }
+  
+  .premium-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .premium-content p {
+    font-size: 18px;
+    color: #666;
+    transform: translateX(250px);
+  }
+  
+
+.additional-content {
+    margin-top: 50px;
+  }
+  
+  .additional-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .additional-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .additional-content li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .additional-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .additional-content .cta-insurance {
+    margin: 1rem;
+  }
+  
+  .additional-content .cta-insurance h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background-color: #FF5733;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite alternate;
+  }
+  
+  .additional-content .cta-insurance p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+    max-width: 600px;
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+
+
+ 
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+    
+  .slider-item {
+    position: relative;
+padding: 1rem;
+}
+  
+
+  .slider-insurance{
+padding: 1rem;   
+  }
+  .slider-item h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    /* margin-left: 30px; */
+    text-align: center;
+    width: 100px;
+    padding: 3px;
+white-space:wrap;
+  }
+  
+  .insurance-img {
+    object-fit: cover;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .slider-link:hover {
+    color: #0056b3;
+  }
+  
+
+
+  .cta-insurance{
+    margin: 1rem;
+  }
+
+
+  .cta-insurance h2{
+        font-size: 32px; 
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        background-color: #FF5733;
+        max-width: 80%;
+        padding: 10px 20px;
+        margin-left: 10%;
+        border-radius: 5px; 
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        animation: pulse 2s infinite alternate; 
+  }
+
+  .cta-insurance p{
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 30px;
+        font-style: italic; 
+        max-width: 600px;
+        line-height: 1.4;
+        opacity: 0.8; 
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+
+
+
+.start-journey {
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .start-journey h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .start-journey p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .start-journey .explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; 
+    color: #fff;
+    font-size: 18px;
+   text-align: center;
+   transform: translateX(450px);
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  @media(max-width:576px){
+    .cta-insurance h2{
+      font-size: 20px;
+    }
+
+
+    .additional-content h2{
+      margin-top: 2rem;
+    }
+  }

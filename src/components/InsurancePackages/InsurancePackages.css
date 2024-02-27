@@ -1,0 +1,196 @@
+.insurance-card {
+    padding: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 16px 24px rgba(0, 0, 0, 0.7);
+
+    height: auto;
+    /* background-color:  #cfe2f3; */
+    margin-left: 60px;
+    color: white;
+    margin-bottom: 10px;
+    width:80% !important;
+    background-color: #708090;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.apply {
+    background-color: #ff8800;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transform: translateX(40px);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply:hover {
+    background-color: #ff9900;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.apply:active {
+    transform: translateY(1px);
+}
+
+.package-title {
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #ff6b6b, #ffb88c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left:-40% ;
+}
+
+.package-title:hover {
+    color: #ff5733;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733;
+    }
+    to {
+        text-shadow: 0 0 20px #ff5733, 0 0 30px #ff5733, 0 0 40px #ff5733;
+    }
+}
+
+.insurance-package {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.insurance-package p {
+    margin-bottom: 10px;
+}
+
+.insurance-package strong {
+    /* color: #333; */
+}
+
+.insurance-package ul {
+    padding-left: 20px;
+}
+
+.insurance-package ul li {
+    list-style-type: disc;
+}
+
+.insurance-package .list-item li {
+    margin-bottom: 5px;
+}
+
+.avatar {
+    border-radius: 50%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.avatar:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.list-item {
+    margin-top: -10px;
+}
+
+
+
+@media (max-width:576px){
+    .insurance-card{
+        width: 90% !important;
+        margin-left: 18px;
+       }
+
+
+       .main-title{
+        font-size: 20px;
+    }
+.package-title{
+    margin-left: -3px;
+}
+    
+       .slider{
+        padding: 1rem;
+       }
+
+       .controls{
+        margin-left: 20px;
+        margin-top: 10px;
+       }
+}
+
+
+
+.controls{
+    transform: translateX(50%);
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.arrow-prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: -60px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.arrow-next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.arrow-prev:hover,
+.arrow-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+

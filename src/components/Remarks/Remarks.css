@@ -1,0 +1,197 @@
+.team-remarks_title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; 
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.header-remark-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-remarks-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-remarks_card {
+    border: 2px solid #ccc;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 20px;
+    background-color: #e6e6fa;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 16px 24px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.team-remarks_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.team-remarks_card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s;
+    z-index: 2;
+}
+
+.team-remarks_card:hover::before {
+    opacity: 1;
+}
+
+.team-remarks_card:hover::after {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.team-remarks_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.view-more-button {
+    background-color:#ff8800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff8800;
+    margin-left: 700px;
+}
+
+.view-more-button:hover {
+    background-color:#ff9900; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.view-more-button:active {
+    background-color: #cc7700; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.time{
+    margin: 10px;
+}
+
+.interaction-detail {
+    color: #333; 
+    padding: 15px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+.interaction-detail p {
+    margin-bottom: 10px;
+}
+
+.recommendation p{
+    color: #333; 
+    padding: 15px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.remarks_from_team h4,.recommendation h4{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(to right, #4CAF50, #8BC34A); 
+    padding: 10px 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remarks_from_team p{
+    color: #333; 
+    padding: 15px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    margin-right: 5px;
+}
+
+.time-text {
+    font-weight: bold;
+    color: #333;
+}
+
+.remark_id {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    transform: translateX(100%);
+}
+
+.remark_id:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+@media (max-width:567px){
+  .team-remarks_title{
+    font-size: 20px
+  }
+
+    .team-remarks-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .view-more-button{
+        margin-left: 150px;
+    }
+}

@@ -1,0 +1,115 @@
+.content-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.applied_status-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.card-name  {
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0; 
+    /* white-space: wrap; */
+    padding: 10px; 
+}
+
+
+.card-status {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff; 
+    border-radius: 4px;
+    transform:translateX(30px);
+    margin-top: 10px !important;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+
+.action button {
+    background-color: #ff8800;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.action button:hover {
+    background-color: #ff9900; 
+}
+
+.action button:active {
+    background-color:  #cc7700; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.data-card {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    overflow-x: scroll;
+    border: 10px solid  #D3D3D3 !important;
+     background-color:  #D3D3D3 !important;
+}
+
+.data-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media(max-width:576px){
+    .applied_status-title{
+        font-size: 20px
+    }
+
+    .data-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action  button{
+        font-size: 10px;
+    }
+
+    .action svg{
+        font-size: 18px;
+    }
+
+.card-name{
+    font-size: 14px !important;
+}
+   
+}
